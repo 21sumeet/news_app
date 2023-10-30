@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello 1</h1>
+    <h1 id="id1">hello ji 2
+        <div>chaman</div>
+    </h1>
+    <h1>hello ji ji 3</h1>
+
+    
+    <script>
+        let a= document.querySelector("h1");  // output :<h1>hello 1</h1>
+        console.log(a);    
+
+        let b = document.querySelectorAll("h1");   //nodelist(3) [h1,h1,h1]
+        console.log(b);
+
+        let c = document.getElementById("id1");
+        console.log(c.innerHTML);
+        console.log(c.innerText);
+        console.log(c);
+        let p =  document.querySelector("#id1")
+        console.log(p);
+
+    </script>
+</body>
+</html>
